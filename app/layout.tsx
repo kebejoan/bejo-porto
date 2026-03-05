@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Google_Sans } from "next/font/google";
 import "./globals.css";
+
+const googleSans = Google_Sans({
+	// variable: "--font-google-sans",
+	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
+});
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -28,7 +34,7 @@ export default function RootLayout({
 			className="[scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
 		>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} ${googleSans.className} antialiased`}
 			>
 				{children}
 			</body>
