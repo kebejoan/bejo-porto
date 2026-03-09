@@ -32,13 +32,15 @@ export default function Home() {
         ${isReady ? "opacity-100" : "opacity-0"}
       `}
 		>
-			{/* <div className="flex flex-col min-h-screen w-full lg:w-3/4 xl:w-2/3"> */}
-			<div className="flex-grow">
+			<div className="flex-grow z-9999">
 				<SkyContent />
 			</div>
-			<GroundHero />
-			<Header />
-			{/* </div> */}
+			<div className="relative z-0 w-screen">
+				<GroundHero />
+				<div className="absolute bottom-0 w-screen">
+					<Header />
+				</div>
+			</div>
 		</main>
 	);
 }
