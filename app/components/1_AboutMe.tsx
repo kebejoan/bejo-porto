@@ -1,14 +1,14 @@
 export default function AboutMe() {
 	return (
-		<div className="w-full lg:flex gap-2">
-			<div className="w-3/4">
+		<div className="w-full flex flex-col-reverse lg:flex-row gap-2">
+			<div className="w-full lg:w-3/4">
 				<div className="w-full flex flex-col items-center gap-4 outline-1">
 					<div className="w-full flex flex-col gap-4 p-4 outline-2">
-						<div className="text-5xl font-bold font-pixel">
+						<div className="text-3xl md:text-4xl lg:text-5xl font-pixel">
 							Hey there, My name is Faishal! 👋
 						</div>
 						<div className="w-full outline-1"></div>
-						<div className="text-[18px] text-justify">
+						<div className="">
 							People usually calls me <strong>Joe/Bejo</strong>. I am an{" "}
 							<strong>SCADA System Engineer and a Full-Stack Developer.</strong>
 							<br />
@@ -33,9 +33,9 @@ export default function AboutMe() {
 					</div>
 				</div>
 			</div>
-			<div className="w-1/4 flex flex-col justify-center outline-2">
-				<div className="w-full">
-					<img src="/ava.png" alt="me" className="w-full" />
+			<div className="w-full lg:w-1/4 flex flex-col justify-center items-center outline-2 p-4 lg:p-0">
+				<div className="w-48 lg:w-full max-w-sm">
+					<img src="/ava.png" alt="me" className="w-full h-auto rounded-xl" />
 				</div>
 			</div>
 		</div>
