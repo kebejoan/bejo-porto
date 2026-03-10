@@ -6,25 +6,27 @@ import ProjectExperience from "./4_ProjectExperience";
 export default function SkyContent() {
 	return (
 		<div className="w-full flex flex-col items-center">
-			<div className="flex flex-col items-center justify-center w-full lg:w-[853px] lg:hidden">
+			{/* Mobile */}
+			<div className="flex lg:hidden flex-col items-center justify-center w-full gap-50">
 				<ProjectExperience />
 				<WorkExperience />
 				<Education />
-				{/* <AboutMe /> */}
+				<AboutMe />
 			</div>
+			{/* Desktop */}
 			<div className="hidden lg:flex flex-col items-center justify-center w-full gap-2">
-				<div className="flex items-center w-[853px] h-screen outline-2">
+				<div className="flex items-center w-[1024] h-screen outline-2">
 					<ProjectExperience />
 				</div>
-				<div className="flex items-center w-[853px] h-screen outline-2">
+				<div className="flex items-center w-[1024] h-screen outline-2">
 					<WorkExperience />
 				</div>
-				<div className="flex items-center w-[853px] h-screen outline-2">
+				<div className="flex items-center w-[1024] h-screen outline-2">
 					<Education />
 				</div>
-				{/* <div className="flex items-center w-[853px] h-screen outline-2">
+				<div className="flex items-center w-[1024] h-screen outline-2">
 					<AboutMe />
-				</div> */}
+				</div>
 			</div>
 		</div>
 	);

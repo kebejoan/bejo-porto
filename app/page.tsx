@@ -28,19 +28,21 @@ export default function Home() {
 	return (
 		<main
 			className={`
-        flex flex-col items-center min-h-screen transition-opacity duration-1000
+        flex flex-col items-center min-h-screen transition-opacity duration-1000 
+				[&_*]:outline-black
         ${isReady ? "opacity-100" : "opacity-0"}
       `}
 		>
-			<div className="flex-grow z-9999">
+			<div className="flex-grow z-9999 w-screen">
 				<SkyContent />
 			</div>
-			<div className="relative z-0 w-screen">
+			<GroundHero />
+			{/* <div className="relative flex-grow z-0 w-screen">
 				<GroundHero />
 				<div className="absolute bottom-0 w-screen">
 					<Header />
 				</div>
-			</div>
+			</div> */}
 		</main>
 	);
 }

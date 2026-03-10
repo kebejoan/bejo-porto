@@ -17,7 +17,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--foreground: #0a0a0a;
-		--background: #e7f7f7;
+		--background: #addcec;
 		/* --background: #0a0a0a; */
 		/* --foreground: #ededed; */
 	}
@@ -36,5 +36,9 @@ body {
 	.no-scrollbar {
 		-ms-overflow-style: none; /* IE and Edge */
 		scrollbar-width: none; /* Firefox */
+	}
+
+	.font-pixel {
+		font-family: var(--font-pixel) !important;
 	}
 }
