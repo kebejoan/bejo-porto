@@ -3,7 +3,7 @@ export default function AboutMe() {
     <div className="w-full flex flex-col-reverse lg:flex-row gap-2">
       <div className="w-full lg:w-3/4">
         <div className="w-full flex flex-col items-center gap-4 outline-1">
-          <div className="w-full flex flex-col gap-4 p-4 outline-2">
+          <div className="w-full flex flex-col gap-2 p-2 outline-2">
             <div className="text-3xl md:text-4xl lg:text-5xl font-pixel">
               Hey there, My name is Faishal! 👋
             </div>
@@ -36,8 +36,8 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/4 flex flex-col justify-center items-center outline-2 p-4 lg:p-0">
-        <div className="w-48 lg:w-full max-w-sm">
+      <div className="w-full lg:w-1/4 flex flex-col justify-center items-center outline-2 p-2 lg:p-0">
+        <div className="w-48 lg:w-full max-w-sm px-2">
           <img src="/ava.png" alt="me" className="w-full h-auto rounded-xl" />
         </div>
       </div>
