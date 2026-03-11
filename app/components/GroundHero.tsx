@@ -7,14 +7,24 @@ export default function GroundHero() {
 				<img
 					src="/Ground.png"
 					alt="RancaUpas"
-					className="w-full h-auto opacity-100 block z-0"
+					className="w-full h-auto opacity-100 block dark:hidden z-0"
+				/>
+				<img
+					src="/Ground_Night.png"
+					alt="RancaUpas"
+					className="w-full h-auto opacity-100 hidden dark:block z-0"
 				/>
 			</div>
 			<div className="absolute bottom-0 w-full flex justify-center">
 				<img
 					src="/Hero.png"
 					alt="Bejoy"
-					className="w-auto h-[250px] md:h-[320px] lg:h-[400px] opacity-100 block z-0"
+					className="w-auto h-[250px] md:h-[320px] lg:h-[400px] opacity-100 block dark:hidden z-0"
+				/>
+				<img
+					src="/Hero_Night.png"
+					alt="Bejoy"
+					className="w-auto h-[250px] md:h-[320px] lg:h-[400px] opacity-100 hidden dark:block z-0"
 				/>
 			</div>
 			<div className="absolute top-45 w-full flex flex-col justify-center items-center gap-4">

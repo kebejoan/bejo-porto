@@ -12,7 +12,7 @@ export default function WorkExperience() {
 							{/* Digital Solutions Engineer */}
 							<div className="relative flex gap-x-4">
 								{/* The Line and Dot Column */}
-								<div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:left-1/2 after:w-px after:-translate-x-1/2 after:bg-black">
+								<div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:left-1/2 after:w-px after:-translate-x-1/2 after:bg-foreground">
 									<div className="relative z-10 flex size-3 items-center justify-center mt-2">
 										●
 									</div>
@@ -34,7 +34,7 @@ export default function WorkExperience() {
 							{/* Senior SCADA System Engineer */}
 							<div className="relative flex gap-x-4">
 								{/* The Line and Dot Column */}
-								<div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:left-1/2 after:w-px after:-translate-x-1/2 after:bg-black">
+								<div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:left-1/2 after:w-px after:-translate-x-1/2 after:bg-foreground">
 									<div className="relative z-10 flex size-3 items-center justify-center mt-2">
 										●
 									</div>
@@ -56,7 +56,7 @@ export default function WorkExperience() {
 							{/* Junior SCADA System Engineer */}
 							<div className="relative flex gap-x-4">
 								{/* The Line and Dot Column */}
-								<div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:left-1/2 after:w-px after:-translate-x-1/2 after:bg-black">
+								<div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:left-1/2 after:w-px after:-translate-x-1/2 after:bg-foreground">
 									<div className="relative z-10 flex size-3 items-center justify-center mt-2">
 										●
 									</div>
@@ -78,7 +78,7 @@ export default function WorkExperience() {
 							{/* Product Development */}
 							<div className="relative flex gap-x-4">
 								{/* The Line and Dot Column */}
-								<div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:left-1/2 after:w-px after:-translate-x-1/2 after:bg-black">
+								<div className="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:left-1/2 after:w-px after:-translate-x-1/2 after:bg-foreground">
 									<div className="relative z-10 flex size-3 items-center justify-center mt-2">
 										●
 									</div>
