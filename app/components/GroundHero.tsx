@@ -22,7 +22,7 @@ export default function GroundHero() {
 					className="w-auto h-[250px] md:h-[320px] lg:h-[400px] opacity-100 block dark:hidden z-0"
 				/>
 				<img
-					src="/Hero_Night.png"
+					src="/Hero_Torch.png"
 					alt="Bejoy"
 					className="w-auto h-[250px] md:h-[320px] lg:h-[400px] opacity-100 hidden dark:block z-0"
 				/>
@@ -33,7 +33,7 @@ export default function GroundHero() {
 				</div>
 				<div className="w-full lg:w-[1024]  flex flex-col justify-center items-center text-xl md:text-2xl lg:text-3xl font-bold text-wrap text-center">
 					<div>
-						SCADA System Engineer | Industrial Automation | Full-Stack Developer
+						SCADA System Engineer • Industrial Automation • Full-Stack Developer
 					</div>
 				</div>
 			</div>
