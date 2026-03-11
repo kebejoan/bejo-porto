@@ -15,16 +15,16 @@ export default function SkyContent() {
 			</div>
 			{/* Desktop */}
 			<div className="hidden lg:flex flex-col items-center justify-center w-full gap-2">
-				<div className="flex items-center w-[1024] h-screen outline-2">
+				<div className="flex items-center w-[1024] h-screen">
 					<ProjectExperience />
 				</div>
-				<div className="flex items-center w-[1024] h-screen outline-2">
+				<div className="flex items-center w-[1024] h-screen">
 					<WorkExperience />
 				</div>
-				<div className="flex items-center w-[1024] h-screen outline-2">
+				<div className="flex items-center w-[1024] h-screen">
 					<Education />
 				</div>
-				<div className="flex items-center w-[1024] h-screen outline-2">
+				<div className="flex items-center w-[1024] h-screen">
 					<AboutMe />
 				</div>
 			</div>

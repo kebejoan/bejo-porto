@@ -47,7 +47,7 @@ body {
 	body {
 		/* Standard CSS way to do responsive text without @apply */
 		/* Clamp: (min size, preferred size based on width, max size) */
-		font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+		font-size: clamp(0.9rem, 0.95rem + 0.25vw, 1.25rem);
 		line-height: 1.6;
 		word-wrap: break-word;
 	}
