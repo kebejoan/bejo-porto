@@ -29,7 +29,9 @@ export default function GroundHero() {
 			</div>
 			<div className="absolute bottom-20 w-full flex flex-col justify-center items-center gap-4">
 				<div className="w-full lg:w-[1024] flex flex-col justify-center items-center text-3xl md:text-4xl lg:text-5xl font-pixel">
-					<div className="bg-blue-100 px-2">↑ The only way is up! ↑</div>
+					<div className="bg-background px-2 rounded-md">
+						↑ The only way is up! ↑
+					</div>
 				</div>
 			</div>
 		</div>

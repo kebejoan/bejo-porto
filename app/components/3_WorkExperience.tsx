@@ -21,7 +21,7 @@ export default function WorkExperience() {
 								<div className="pb-8">
 									<h3 className="font-bold ">Digital Solutions Engineer</h3>
 									<p className="text-sm lg:text-base">
-										Yokogawa • Full-time • Apr 2026 - Now
+										Yokogawa • Full-time • Aug 2025 - Now
 									</p>
 									<p className="text-sm lg:text-base mt-2">
 										Be the first Indonesia's LIMS Eng. Associate and
