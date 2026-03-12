@@ -143,9 +143,13 @@ export default function WorkExperience() {
 
 							{/* Repeat for next item */}
 						</div>
-						<p className="w-fit font-pixel text-[1.4rem] lg:text-3xl hover:cursor-pointer hover:text-bgblue">
-							See more
-						</p>
+						<a
+							href="https://www.linkedin.com/in/faishal-bejo/"
+							target="_blank"
+							className="w-fit font-pixel text-[1.4rem] lg:text-3xl hover:cursor-pointer hover:text-bgblue"
+						>
+							See more on LinkedIn
+						</a>
 					</div>
 				</div>
 			</div>

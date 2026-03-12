@@ -1,3 +1,5 @@
+import { BEBadges, FEBadges } from "./badges";
+
 export default function AdditionalInfo() {
 	return (
 		<div className="w-full flex flex-col px-4">
@@ -15,44 +17,11 @@ export default function AdditionalInfo() {
 							<div className="flex flex-col lg:flex-row gap-2 ">
 								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10">
 									<p className="mb-2 font-bold text-bgblueflip">Front-End</p>
-									<div className="w-full flex flex-wrap gap-2 leading-none">
-										{/* This badges really needs to be a component */}
-										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
-											Next.js
-										</p>
-										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
-											React
-										</p>
-										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
-											Typescript
-										</p>
-										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
-											Javascript
-										</p>
-										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
-											Tailwind
-										</p>
-										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
-											HTML5
-										</p>
-										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
-											CSS
-										</p>
-									</div>
+									<FEBadges />
 								</div>
 								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10">
 									<p className="mb-2 font-bold text-bgblueflip">Back-End</p>
-									<div className="w-full flex flex-wrap gap-2 leading-none">
-										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
-											Nest.js
-										</p>
-										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
-											PrismaORM
-										</p>
-										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
-											Typescript
-										</p>
-									</div>
+									<BEBadges />
 								</div>
 							</div>
 						</div>
@@ -63,22 +32,34 @@ export default function AdditionalInfo() {
 							<div className="flex flex-col lg:flex-row gap-2 ">
 								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10 text-wrap">
 									<p className="font-bold text-bgblueflip">Certificate:</p>
-									<p className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer">
+									<a
+										href="https://drive.google.com/file/d/1dUWXe12BGEdFPMB6gSfytTmZn29oMZvu/view?usp=drive_link"
+										target="_blank"
+										className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer underline"
+									>
 										• RevoU • Full-Stack Software Engineering Bootcamp • 2025(⬆)
-									</p>
+									</a>
 								</div>
 								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10 text-wrap">
 									<p className="font-bold text-bgblueflip">Publication:</p>
-									<p className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer">
+									<a
+										href="https://ijaseit.insightsociety.org/index.php/ijaseit/article/view/12989/pdf_1653"
+										target="_blank"
+										className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer underline "
+									>
 										• Telkom University • Analysis of Indoor Air Quality Based
 										on Low-Cost Sensor • 2020(⬆)
-									</p>
+									</a>
 								</div>
 								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10 text-wrap">
 									<p className="font-bold text-bgblueflip">Patent:</p>
-									<p className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer">
+									<a
+										href="https://drive.google.com/file/d/1c1e5m_6C6EXFQIdUktnEuvnTa-atIrk7/view?usp=sharing"
+										target="_blank"
+										className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer underline"
+									>
 										• DJKI • S00202006865 • 2021(⬆)
-									</p>
+									</a>
 								</div>
 							</div>
 						</div>
