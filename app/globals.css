@@ -15,7 +15,7 @@
 	--color-bgblueflip: var(--bgblueflip);
 	--color-bgblue: var(--bgblue);
 	--font-pixel: var(--font-pixel);
-	--font-google: var(--font-google-sans)
+	--font-google: var(--font-google-sans);
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 }
