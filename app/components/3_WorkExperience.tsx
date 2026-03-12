@@ -5,7 +5,7 @@ export default function WorkExperience() {
 				<div className="w-full flex flex-col items-center gap-4 grid-span-2">
 					<div className="w-full flex flex-col gap-2 px-4 ">
 						<div className="text-3xl md:text-4xl lg:text-5xl font-pixel">
-							Work Experience
+							Work Experience🧑🏻‍💻
 						</div>
 						{/* <div className="w-1/2 outline-1"></div> */}
 						<div className="space-y-0 w-full">

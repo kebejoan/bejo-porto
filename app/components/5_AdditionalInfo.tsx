@@ -4,7 +4,7 @@ export default function AdditionalInfo() {
 	return (
 		<div className="w-full flex flex-col px-4">
 			<h2 className="text-3xl md:text-4xl lg:text-5xl font-pixel mb-2">
-				Additonal Information
+				Additonal Informationℹ️
 			</h2>
 			<div className="w-full flex gap-2">
 				{/* Content */}

@@ -5,7 +5,7 @@ export default function Education() {
 				<div className="w-full flex flex-col items-center gap-4  grid-span-2">
 					<div className="w-full flex flex-col gap-4 px-4 ">
 						<div className="text-3xl md:text-4xl lg:text-5xl font-pixel">
-							Education
+							Education🎓
 						</div>
 						{/* <div className="w-full outline-1"></div> */}
 						{/* Revou */}

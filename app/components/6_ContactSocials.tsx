@@ -2,7 +2,7 @@ export default function ContactSocials() {
 	return (
 		<div className="w-full flex flex-col items-center px-4">
 			<h2 className="text-3xl md:text-4xl lg:text-5xl font-pixel mb-2">
-				Contact and Socials
+				Contact and Socials☎️
 			</h2>
 			<p className="font-bold mb-8 text-wrap text-center text-bgblueflip">
 				Hey, you can reach out to me through these means:
