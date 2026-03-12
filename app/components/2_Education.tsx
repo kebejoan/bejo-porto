@@ -17,7 +17,7 @@ export default function Education() {
 										Exemplary
 									</p>
 								</div>
-								<div className="text-sm lg:text-base mb-2  text-blue-500 font-bold">
+								<div className="text-sm lg:text-base mb-2 font-bold text-bgblueflip">
 									Full-Stack Software Engineering • Feb 2025 - Aug 2025
 								</div>
 							</div>
@@ -38,7 +38,7 @@ export default function Education() {
 										Cum Laude
 									</p>
 								</div>
-								<div className="text-sm lg:text-base mb-2 text-blue-500 font-bold">
+								<div className="text-sm lg:text-base mb-2 font-bold text-bgblueflip">
 									Bachelor's of Engineering Physics • Aug 2016 - Mar 2020
 								</div>
 							</div>

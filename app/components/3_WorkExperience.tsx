@@ -20,7 +20,7 @@ export default function WorkExperience() {
 								{/* The Content Column */}
 								<div className="pb-2 px-2 w-full bg-bgblue rounded-md my-2">
 									<h3 className="font-bold ">Digital Solutions Engineer</h3>
-									<p className="text-sm lg:text-base text-blue-500 font-bold">
+									<p className="text-sm lg:text-base text-bgblueflip font-bold">
 										Yokogawa • Full-time • Aug 2025 - Now
 									</p>
 									<p className="text-sm lg:text-base mt-2">
@@ -42,7 +42,7 @@ export default function WorkExperience() {
 								{/* The Content Column */}
 								<div className="pb-2 px-2 w-full bg-bgblue rounded-md my-2">
 									<h3 className="font-bold">Senior SCADA System Engineer</h3>
-									<p className="text-sm lg:text-base text-blue-500 font-bold">
+									<p className="text-sm lg:text-base text-bgblueflip font-bold">
 										Yokogawa • Full-time • Apr 2024 - Apr 2026
 									</p>
 									<p className="text-sm lg:text-base mt-2">
@@ -64,7 +64,7 @@ export default function WorkExperience() {
 								{/* The Content Column */}
 								<div className="pb-2 px-2 w-full bg-bgblue rounded-md my-2">
 									<h3 className="font-bold">Junior SCADA System Engineer</h3>
-									<p className="text-sm lg:text-base text-blue-500 font-bold">
+									<p className="text-sm lg:text-base text-bgblueflip font-bold">
 										Yokogawa • Full-time • Feb 2022 - Apr 2024
 									</p>
 									<p className="text-sm lg:text-base mt-2">
@@ -86,7 +86,7 @@ export default function WorkExperience() {
 								{/* The Content Column */}
 								<div className="pb-2 px-2 w-full bg-bgblue rounded-md my-2">
 									<h3 className="font-bold">Product Development</h3>
-									<p className="text-sm lg:text-base text-blue-500 font-bold">
+									<p className="text-sm lg:text-base text-bgblueflip font-bold">
 										Matra Kreasi • Full-time • Mar 2021 - Feb 2022
 									</p>
 									<p className="text-sm lg:text-base mt-2">
@@ -108,7 +108,7 @@ export default function WorkExperience() {
 								{/* The Content Column */}
 								<div className="pb-2 px-2 w-full bg-bgblue rounded-md my-2">
 									<h3 className="font-bold">NEXT WORK</h3>
-									<p className="text-sm lg:text-base text-blue-500 font-bold">
+									<p className="text-sm lg:text-base text-bgblueflip font-bold">
 										• Full-time • Mar 2021 - Feb 2022
 									</p>
 									<p className="text-sm lg:text-base mt-2">
@@ -130,7 +130,7 @@ export default function WorkExperience() {
 								{/* The Content Column */}
 								<div className="pb-2 px-2 w-full bg-bgblue rounded-md my-2">
 									<h3 className="font-bold">NEXT WORK</h3>
-									<p className="text-sm lg:text-base text-blue-500 font-bold">
+									<p className="text-sm lg:text-base text-bgblueflip font-bold">
 										Matra Kreasi • Full-time • Mar 2021 - Feb 2022
 									</p>
 									<p className="text-sm lg:text-base mt-2">
