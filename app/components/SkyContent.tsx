@@ -3,12 +3,16 @@ import Education from "./2_Education";
 import WorkExperience from "./3_WorkExperience";
 import ProjectExperience from "./4_ProjectExperience";
 import AdditionalInfo from "./5_AdditionalInfo";
+import ContactSocials from "./6_ContactSocials";
 
 export default function SkyContent() {
 	return (
 		<div className="w-full flex flex-col items-center">
 			{/* Mobile */}
 			<div className="flex lg:hidden flex-col items-center justify-center w-full">
+				<div className="flex items-center w-full h-screen">
+					<ContactSocials />
+				</div>
 				<div className="flex items-center w-full h-screen">
 					<AdditionalInfo />
 				</div>
@@ -27,6 +31,9 @@ export default function SkyContent() {
 			</div>
 			{/* Desktop */}
 			<div className="hidden lg:flex flex-col items-center justify-center w-full gap-2">
+				<div className="flex items-center w-[1024] h-screen">
+					<ContactSocials />
+				</div>
 				<div className="flex items-center w-[1024] h-screen">
 					<AdditionalInfo />
 				</div>
