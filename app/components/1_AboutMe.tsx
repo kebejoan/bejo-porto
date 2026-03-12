@@ -38,14 +38,16 @@ export default function AboutMe() {
 							</div>
 						</div>
 						<div className="w-full flex justify-end">
-							<div className="text-blue-500 font-bold">...tell me more</div>
+							<p className="w-fit font-pixel text-[1.4rem] lg:text-3xl text-right hover:cursor-pointer hover:text-bgblue">
+								...tell me more
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div className="w-full lg:w-1/4 flex flex-col justify-center items-center  p-2 lg:p-0">
 				<div className="w-48 lg:w-full max-w-sm pt-6 bg-bgblue rounded-full ">
-					<img src="/ava.png" alt="me" className="w-full h-auto " />
+					<img src="/ava.png" alt="me" className="w-full h-auto" />
 				</div>
 			</div>
 		</div>

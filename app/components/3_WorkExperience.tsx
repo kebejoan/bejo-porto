@@ -87,7 +87,7 @@ export default function WorkExperience() {
 								<div className="pb-2 px-2 w-full bg-bgblue rounded-md my-2">
 									<h3 className="font-bold">Product Development</h3>
 									<p className="text-sm lg:text-base text-blue-500 font-bold">
-										• Full-time • Mar 2021 - Feb 2022
+										Matra Kreasi • Full-time • Mar 2021 - Feb 2022
 									</p>
 									<p className="text-sm lg:text-base mt-2">
 										Managed the full-cycle development of embedded products,
@@ -96,7 +96,7 @@ export default function WorkExperience() {
 									</p>
 								</div>
 							</div>
-
+							{/* HIDDEN FOR FUTURE EXPANSION */}
 							{/* NEXT WORK */}
 							<div className="hidden relative flex gap-x-4">
 								{/* The Line and Dot Column */}
@@ -131,7 +131,7 @@ export default function WorkExperience() {
 								<div className="pb-2 px-2 w-full bg-bgblue rounded-md my-2">
 									<h3 className="font-bold">NEXT WORK</h3>
 									<p className="text-sm lg:text-base text-blue-500 font-bold">
-										• Full-time • Mar 2021 - Feb 2022
+										Matra Kreasi • Full-time • Mar 2021 - Feb 2022
 									</p>
 									<p className="text-sm lg:text-base mt-2">
 										Managed the full-cycle development of embedded products,
@@ -143,7 +143,9 @@ export default function WorkExperience() {
 
 							{/* Repeat for next item */}
 						</div>
-						<div className="font-pixel text-[1.4rem] lg:text-3xl">See more</div>
+						<p className="w-fit font-pixel text-[1.4rem] lg:text-3xl hover:cursor-pointer hover:text-bgblue">
+							See more
+						</p>
 					</div>
 				</div>
 			</div>

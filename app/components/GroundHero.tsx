@@ -39,9 +39,12 @@ export default function GroundHero() {
 			</div>
 			<div className="absolute bottom-20 w-full flex flex-col justify-center items-center gap-4">
 				<div className="w-full lg:w-[1024] flex flex-col justify-center items-center text-3xl md:text-4xl lg:text-5xl font-pixel">
-					<div className="bg-background px-2 rounded-md">
-						↑ The only way is up! ↑
-					</div>
+					<p className="flex lg:hidden bg-background px-2 rounded-2xl">
+						Swipe down, take the tour!
+					</p>
+					<p className="hidden lg:flex bg-background px-2 rounded-2xl">
+						Scroll up, take the tour!
+					</p>
 				</div>
 			</div>
 		</div>

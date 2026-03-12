@@ -1,7 +1,7 @@
 export default function ProjectExperience() {
 	return (
 		<div className="w-full flex flex-col px-4">
-			<h2 className="text-3xl md:text-4xl lg:text-5xl font-pixel mb-2">
+			<h2 className="text-3xl md:text-4xl lg:text-5xl font-pixel">
 				Project Experience
 			</h2>
 			<div className="w-full flex gap-2">
@@ -32,6 +32,11 @@ export default function ProjectExperience() {
 						{">"}
 					</div>
 				</div>
+			</div>
+			<div className="w-full flex justify-end">
+				<p className="w-fit  font-pixel text-[1.4rem] lg:text-3xl hover:cursor-pointer hover:text-bgblue">
+					...see all projects
+				</p>
 			</div>
 		</div>
 	);
