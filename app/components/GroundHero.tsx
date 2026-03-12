@@ -1,4 +1,5 @@
 import AboutMe from "./1_AboutMe";
+import { AllBadges, BEBadges, FEBadges } from "./badges";
 
 export default function GroundHero() {
 	return (
@@ -34,9 +35,14 @@ export default function GroundHero() {
 				<div className="w-full leading-none lg:w-[1024]  flex flex-col justify-center items-center text-[1.4rem] text-center text-wrap md:text-4xl lg:text-5xl text-wrap font-pixel mb-6 text-bgblueflip">
 					<div>"Industrial Grade Modern Web Application"</div>
 				</div>
-				<div className="w-full lg:w-[1024]  flex flex-col justify-center items-center text-xl md:text-2xl lg:text-3xl font-bold text-wrap text-center">
+				<div className="w-full lg:w-[1024]  flex flex-col justify-center items-center text-xl md:text-2xl lg:text-3xl font-bold text-wrap text-center gap-4">
 					<div>
 						SCADA System Engineer • Industrial Automation • Full-Stack Developer
+					</div>
+					<div className="left-20 w-full lg:w-[768] flex items-center justify-center translate-x--10 overflow-hidden px-2">
+						<div className="-ml-1">
+							<AllBadges />
+						</div>
 					</div>
 				</div>
 			</div>
