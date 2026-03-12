@@ -16,6 +16,7 @@ export default function AdditionalInfo() {
 								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10">
 									<p className="mb-2 font-bold text-bgblueflip">Front-End</p>
 									<div className="w-full flex flex-wrap gap-4 leading-none">
+										{/* This badges really needs to be a component */}
 										<p className="text-sm lg:text-base cursor-default default px-2 py-1 font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
 											Next.js
 										</p>

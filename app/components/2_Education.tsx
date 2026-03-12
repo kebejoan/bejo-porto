@@ -11,7 +11,12 @@ export default function Education() {
 						{/* Revou */}
 						<div className="w-full flex flex-col bg-bgblue rounded-md gap-1 p-2">
 							<div className="w-full flex flex-col">
-								<div className="font-bold">RevoU</div>
+								<div className="flex gap-2 items-center">
+									<div className="font-bold">RevoU</div>
+									<p className="w-fit h-fit text-[0.7rem] lg:text-sm cursor-default default px-2 font-google font-bold bg-bgblueflip text-bgblue rounded-full">
+										Exemplary
+									</p>
+								</div>
 								<div className="text-sm lg:text-base mb-2  text-blue-500 font-bold">
 									Full-Stack Software Engineering • Feb 2025 - Aug 2025
 								</div>
@@ -27,7 +32,12 @@ export default function Education() {
 						{/* TelU */}
 						<div className="w-full flex flex-col bg-bgblue rounded-md p-2">
 							<div className="w-full flex flex-col">
-								<div className="font-bold">Telkom University</div>
+								<div className="flex gap-2 items-center">
+									<div className="font-bold">Telkom University</div>
+									<p className="w-fit h-fit text-[0.7rem] lg:text-sm cursor-default default px-2 font-google font-bold bg-bgblueflip text-bgblue rounded-full">
+										Cum Laude
+									</p>
+								</div>
 								<div className="text-sm lg:text-base mb-2 text-blue-500 font-bold">
 									Bachelor's of Engineering Physics • Aug 2016 - Mar 2020
 								</div>
