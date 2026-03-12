@@ -27,7 +27,7 @@ export default function Home() {
 	return (
 		<main
 			className={`
-        flex flex-col items-center min-h-screen transition-opacity duration-1000 
+        flex flex-col items-center min-h-screen transition-opacity duration-1000 cursor-default
 				
         ${isReady ? "opacity-100" : "opacity-0"}
       `}
