@@ -15,41 +15,41 @@ export default function AdditionalInfo() {
 							<div className="flex flex-col lg:flex-row gap-2 ">
 								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10">
 									<p className="mb-2 font-bold text-bgblueflip">Front-End</p>
-									<div className="w-full flex flex-wrap gap-4 leading-none">
+									<div className="w-full flex flex-wrap gap-2 leading-none">
 										{/* This badges really needs to be a component */}
-										<p className="text-sm lg:text-base cursor-default default px-2 py-1 font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
+										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
 											Next.js
 										</p>
-										<p className="text-sm lg:text-base cursor-default default px-2 py-1 font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
+										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
 											React
 										</p>
-										<p className="text-sm lg:text-base cursor-default default px-2 py-1 font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
+										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
 											Typescript
 										</p>
-										<p className="text-sm lg:text-base cursor-default default px-2 py-1 font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
+										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
 											Javascript
 										</p>
-										<p className="text-sm lg:text-base cursor-default default px-2 py-1 font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
+										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
 											Tailwind
 										</p>
-										<p className="text-sm lg:text-base cursor-default default px-2 py-1 font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
+										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
 											HTML5
 										</p>
-										<p className="text-sm lg:text-base cursor-default default px-2 py-1 font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
+										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
 											CSS
 										</p>
 									</div>
 								</div>
 								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10">
 									<p className="mb-2 font-bold text-bgblueflip">Back-End</p>
-									<div className="w-full flex flex-wrap gap-4 leading-none">
-										<p className="text-sm lg:text-base cursor-default default px-2 py-1 font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
+									<div className="w-full flex flex-wrap gap-2 leading-none">
+										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
 											Nest.js
 										</p>
-										<p className="text-sm lg:text-base cursor-default default px-2 py-1 font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
+										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
 											PrismaORM
 										</p>
-										<p className="text-sm lg:text-base cursor-default default px-2 py-1 font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
+										<p className="text-sm lg:text-base cursor-default default px-1 h-fit font-google font-bold bg-bgblueflip text-bgblue hover:bg-blue-500 rounded-full">
 											Typescript
 										</p>
 									</div>

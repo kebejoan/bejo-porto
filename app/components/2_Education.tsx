@@ -13,7 +13,7 @@ export default function Education() {
 							<div className="w-full flex flex-col">
 								<div className="flex gap-2 items-center">
 									<div className="font-bold">RevoU</div>
-									<p className="w-fit h-fit text-[0.7rem] lg:text-sm cursor-default default px-2 font-google font-bold bg-bgblueflip text-bgblue rounded-full">
+									<p className="w-fit h-fit text-[0.6rem] lg:text-[0.7rem] cursor-default default px-1 font-bold bg-bgblueflip text-bgblue rounded-full">
 										Exemplary
 									</p>
 								</div>
@@ -34,7 +34,7 @@ export default function Education() {
 							<div className="w-full flex flex-col">
 								<div className="flex gap-2 items-center">
 									<div className="font-bold">Telkom University</div>
-									<p className="w-fit h-fit text-[0.7rem] lg:text-sm cursor-default default px-2 font-google font-bold bg-bgblueflip text-bgblue rounded-full">
+									<p className="w-fit h-fit text-[0.6rem] lg:text-[0.7rem] cursor-default default px-1 font-bold bg-bgblueflip text-bgblue rounded-full">
 										Cum Laude
 									</p>
 								</div>
