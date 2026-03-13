@@ -1,4 +1,5 @@
-import { BEBadges, FEBadges } from "./badges";
+import Badge from "./badges";
+import { FEStack, BEStack } from "@/data/techstack";
 
 export default function AdditionalInfo() {
 	return (
@@ -17,11 +18,19 @@ export default function AdditionalInfo() {
 							<div className="flex flex-col lg:flex-row gap-2 ">
 								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-5">
 									<p className="mb-2 font-bold text-bgblueflip">Front-End</p>
-									<FEBadges />
+									<div className="w-full flex flex-wrap gap-2">
+										{FEStack.map((stack) => (
+											<Badge text={stack} key={stack} />
+										))}
+									</div>
 								</div>
 								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-5">
 									<p className="mb-2 font-bold text-bgblueflip">Back-End</p>
-									<BEBadges />
+									<div className="w-full flex flex-wrap gap-2">
+										{BEStack.map((stack) => (
+											<Badge text={stack} key={stack} />
+										))}
+									</div>
 								</div>
 							</div>
 						</div>

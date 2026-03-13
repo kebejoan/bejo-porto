@@ -1,5 +1,6 @@
 import AboutMe from "./1_AboutMe";
-import { AllBadges, BEBadges, FEBadges } from "./badges";
+import { AllStack } from "@/data/techstack";
+import Badge from "./badges";
 
 export default function GroundHero() {
 	return (
@@ -41,7 +42,11 @@ export default function GroundHero() {
 					</div>
 					<div className="left-20 w-full lg:w-[768] flex items-center justify-center translate-x--10 overflow-hidden px-2">
 						<div className="-ml-1">
-							<AllBadges />
+							<div className="w-full flex gap-2 overflow-hidden">
+								{AllStack.map((stack, index) => (
+									<Badge text={stack} key={index} />
+								))}
+							</div>
 						</div>
 					</div>
 				</div>
@@ -55,7 +60,7 @@ export default function GroundHero() {
 						Scroll up, take the tour!
 					</p>
 				</div>
-				<div className="font-bold flex flex-row text-3xl text-red-500 bg-black">
+				<div className="font-bold flex flex-row text-lg md:text-xl lg:text-3xl text-red-500 bg-black">
 					<div>{"🚧 UNDERCONSTRUCTION 🚧"}</div>
 				</div>
 			</div>
