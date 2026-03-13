@@ -3,10 +3,10 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectExperience() {
 	return (
 		<div className="w-full flex flex-col px-4">
-			<h2 className="text-3xl md:text-4xl lg:text-5xl font-pixel">
+			<h2 className="text-3xl md:text-4xl lg:text-5xl font-pixel mb-2">
 				Project Experience👷🏻
 			</h2>
-			<div className="w-full flex flex-row gap-2 mb-4">
+			<div className="w-full flex flex-row gap-2 mb-2">
 				<ProjectCard />
 			</div>
 			<div className="w-full flex justify-between">
