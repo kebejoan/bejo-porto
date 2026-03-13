@@ -15,11 +15,11 @@ export default function AdditionalInfo() {
 								• My Tech Stack
 							</div>
 							<div className="flex flex-col lg:flex-row gap-2 ">
-								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10">
+								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-5">
 									<p className="mb-2 font-bold text-bgblueflip">Front-End</p>
 									<FEBadges />
 								</div>
-								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10">
+								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-5">
 									<p className="mb-2 font-bold text-bgblueflip">Back-End</p>
 									<BEBadges />
 								</div>
@@ -30,37 +30,48 @@ export default function AdditionalInfo() {
 								• Others
 							</div>
 							<div className="flex flex-col lg:flex-row gap-2 ">
-								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10 text-wrap">
-									<p className="font-bold text-bgblueflip">Certificate:</p>
+								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-5 text-wrap">
+									<p className="font-bold text-bgblueflip">
+										Supplementary Links:
+									</p>
 									<a
 										href="https://drive.google.com/file/d/1dUWXe12BGEdFPMB6gSfytTmZn29oMZvu/view?usp=drive_link"
 										target="_blank"
 										className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer underline"
 									>
-										• RevoU • Full-Stack Software Engineering Bootcamp • 2025(⬆)
+										• Certificate • Software Eng. RevoU • 2025 (⬆)
 									</a>
-								</div>
-								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10 text-wrap">
-									<p className="font-bold text-bgblueflip">Publication:</p>
 									<a
 										href="https://ijaseit.insightsociety.org/index.php/ijaseit/article/view/12989/pdf_1653"
 										target="_blank"
 										className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer underline "
 									>
-										• Telkom University • Analysis of Indoor Air Quality Based
-										on Low-Cost Sensor • 2020(⬆)
+										• Publication • Analysis of Indoor Air Quality Based on
+										Low-Cost Sensor • 2020(⬆)
 									</a>
-								</div>
-								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-10 text-wrap">
-									<p className="font-bold text-bgblueflip">Patent:</p>
 									<a
 										href="https://drive.google.com/file/d/1c1e5m_6C6EXFQIdUktnEuvnTa-atIrk7/view?usp=sharing"
 										target="_blank"
 										className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer underline"
 									>
-										• DJKI • S00202006865 • 2021(⬆)
+										• Patent • DJKI • S00202006865 • 2021(⬆)
 									</a>
 								</div>
+							</div>
+							<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-5 text-wrap">
+								<p className="font-bold text-bgblueflip">Soft Skills:</p>
+								<p className="text-sm lg:text-base font-bold ">
+									• Critical Thinking
+								</p>
+								<p className="text-sm lg:text-base font-bold ">
+									• High Attention to Detail
+								</p>
+								<p className="text-sm lg:text-base font-bold ">
+									• High Attention to Detail
+								</p>
+								<p className="text-sm lg:text-base font-bold ">
+									• Cross Disciplinary Collaboration
+								</p>
 							</div>
 						</div>
 					</div>
