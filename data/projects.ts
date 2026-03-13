@@ -66,7 +66,7 @@ export const projects: Project[] = [
 			"REST API",
 			"Custom Middleware",
 		],
-		repo: "https://repo.com/kebejoan/toko-pa-edi",
+		repo: "https://github.com/kebejoan/toko-pa-edi",
 		live: "https://toko-pa-edi.vercel.app/",
 	},
 	{
@@ -103,7 +103,7 @@ export const projects: Project[] = [
 		],
 		video: [{ id: 1, src: "./tokopaedi_vid.webm" }],
 		techstack: ["Typescript", "Tailwind", "OOP", "Vite"],
-		repo: "https://repo.com/kebejoan/bejo-portal-game",
+		repo: "https://github.com/kebejoan/bejo-portal-game",
 		live: "https://kebejoan.repo.io/bejo-game-portal/",
 	},
 	{
@@ -140,7 +140,7 @@ export const projects: Project[] = [
 		],
 		video: [{ id: 1, src: "./tokopaedi_vid.webm" }],
 		techstack: ["Python", "Pandas", "ETL", "Nuitka", "CLI"],
-		// repo: "https://repo.com/kebejoan/bejo-portal-game",
+		// repo: "https://github.com/kebejoan/bejo-portal-game",
 		// live: "https://kebejoan.repo.io/bejo-game-portal/",
 	},
 ];
