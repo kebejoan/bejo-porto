@@ -1,26 +1,18 @@
+"use client";
+
+import { useState } from "react";
 import { Project } from "@/data/projects";
 import Badge from "./badges";
+import ProjectModal from "./ProjectModal";
 
 interface ProjectCardProps {
   data: Project;
 }
 
 export default function ProjectCard({ data }: ProjectCardProps) {
-  const {
-    title,
-    summary,
-    background,
-    methods,
-    results,
-    responsibility,
-    image,
-    video,
-    techstack,
-    repo,
-    live,
-  } = data;
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const isVidExists: boolean = video?.[0]?.src !== "blank";
+  const { title, summary, video, techstack, repo, live } = data;
 
   return (
     <div className="w-full flex flex-col gap-2">
@@ -64,13 +56,12 @@ export default function ProjectCard({ data }: ProjectCardProps) {
 				</div> */}
       </div>
       <div className="flex flex-col lg:flex-row w-full gap-2">
-        <a
-          href=""
-          target="_blank"
+        <button
+          onClick={() => setIsModalOpen(true)}
           className="bg-bgblue grow rounded-md hover:bg-bgblueflip hover:text-bgblue cursor-pointer text-center py-1 lg:py-2 font-bold"
         >
           Detail
-        </a>
+        </button>
         <a
           href={live}
           target="_blank"
@@ -86,6 +77,11 @@ export default function ProjectCard({ data }: ProjectCardProps) {
           Repo
         </a>
       </div>
+      <ProjectModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        project={data}
+      />
     </div>
   );
 }
