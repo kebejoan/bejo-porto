@@ -3,7 +3,7 @@ import { AllBadges, BEBadges, FEBadges } from "./badges";
 
 export default function GroundHero() {
 	return (
-		<div className="relative w-full h-screen ">
+		<div className="relative w-full h-screen">
 			<div className="flex flex-col justify-end items-center w-full h-full">
 				<img
 					src="/Ground.png"
@@ -46,7 +46,7 @@ export default function GroundHero() {
 					</div>
 				</div>
 			</div>
-			<div className="absolute bottom-20 w-full flex flex-col justify-center items-center gap-4">
+			<div className="absolute bottom-20 w-full flex flex-col justify-center items-center gap-4  overflow-hidden">
 				<div className="w-full lg:w-[1024] flex flex-col justify-center items-center text-3xl md:text-4xl lg:text-5xl font-pixel">
 					<p className="flex lg:hidden bg-background px-2 rounded-2xl">
 						Swipe down, take the tour!
@@ -54,6 +54,9 @@ export default function GroundHero() {
 					<p className="hidden lg:flex bg-background px-2 rounded-2xl">
 						Scroll up, take the tour!
 					</p>
+				</div>
+				<div className="font-bold flex flex-row text-3xl text-red-500 bg-black">
+					<div>{"🚧 UNDERCONSTRUCTION 🚧"}</div>
 				</div>
 			</div>
 		</div>
