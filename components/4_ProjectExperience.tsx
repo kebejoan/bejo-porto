@@ -1,4 +1,7 @@
 import ProjectCard from "./ProjectCard";
+import { projects } from "@/data/projects";
+
+const project = projects[0];
 
 export default function ProjectExperience() {
 	return (
@@ -7,7 +10,7 @@ export default function ProjectExperience() {
 				Project Experience👷🏻
 			</h2>
 			<div className="w-full flex flex-row gap-2 mb-2">
-				<ProjectCard />
+				<ProjectCard data={project} />
 			</div>
 			<div className="w-full flex justify-between">
 				<div className="w-fit flex gap-5 ">

@@ -1,4 +1,27 @@
-export default function ProjectCard() {
+import { Project } from "@/data/projects";
+import Badge from "./badges";
+
+interface ProjectCardProps {
+	data: Project;
+}
+
+export default function ProjectCard({ data }: ProjectCardProps) {
+	const {
+		title,
+		summary,
+		background,
+		methods,
+		results,
+		responsibility,
+		image,
+		video,
+		techstack,
+		repo,
+		live,
+	} = data;
+
+	const isVidExists: boolean = video?.[0]?.src !== "blank";
+
 	return (
 		<div className="w-full flex flex-col gap-2">
 			<div className="w-full flex flex-row gap-2 rounded-md bg-bgblue">
@@ -17,18 +40,18 @@ export default function ProjectCard() {
 									autoPlay
 									muted
 									loop
-									src="/Tokopaedi_vid.webm"
+									src={video?.[0]?.src || "blank"}
 									className="absolute inset-0 w-full h-full object-cover object-top hover:play"
 								/>
 							</div>
 							<div className="w-full flex flex-col gap-2 px-2 lg:px-4 mb-6">
-								<div className="rounded-md font-bold">Tokopaedi</div>
-								<div className="rounded-md">
-									A high-fidelity Tokopedia clone built with Next.js and
-									TypeScript, showcasing a complex, production-level e-commerce
-									interface. 🛍️
+								<div className=" font-bold">{title}</div>
+								<div className="">{summary}</div>
+								<div className="w-fit flex flex-row flex-wrap gap-2">
+									{techstack.map((tech, index) => (
+										<Badge key={index} text={tech} />
+									))}
 								</div>
-								<div className="rounded-md">Tech-Stack</div>
 							</div>
 						</div>
 					</div>
@@ -41,15 +64,27 @@ export default function ProjectCard() {
 				</div> */}
 			</div>
 			<div className="flex flex-col lg:flex-row w-full gap-2">
-				<div className="bg-bgblue grow rounded-md hover:bg-bgblueflip hover:text-bgblue cursor-pointer text-center py-1 lg:py-2 font-bold">
+				<a
+					href=""
+					target="_blank"
+					className="bg-bgblue grow rounded-md hover:bg-bgblueflip hover:text-bgblue cursor-pointer text-center py-1 lg:py-2 font-bold"
+				>
 					Detail
-				</div>
-				<div className="bg-bgblue grow rounded-md hover:bg-bgblueflip hover:text-bgblue cursor-pointer text-center py-1 lg:py-2 font-bold">
+				</a>
+				<a
+					href={live}
+					target="_blank"
+					className="bg-bgblue grow rounded-md hover:bg-bgblueflip hover:text-bgblue cursor-pointer text-center py-1 lg:py-2 font-bold"
+				>
 					Live
-				</div>
-				<div className="bg-bgblue grow rounded-md hover:bg-bgblueflip hover:text-bgblue cursor-pointer text-center py-1 lg:py-2 font-bold">
+				</a>
+				<a
+					href={repo}
+					target="_blank"
+					className="bg-bgblue grow rounded-md hover:bg-bgblueflip hover:text-bgblue cursor-pointer text-center py-1 lg:py-2 font-bold"
+				>
 					Repo
-				</div>
+				</a>
 			</div>
 		</div>
 	);
