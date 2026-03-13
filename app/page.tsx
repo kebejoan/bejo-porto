@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import GroundHero from "./components/GroundHero";
-import SkyContent from "./components/SkyContent";
+import GroundHero from "@/components/GroundHero";
+import SkyContent from "@/components/SkyContent";
 
 export default function Home() {
 	const [isReady, setIsReady] = useState(false);
