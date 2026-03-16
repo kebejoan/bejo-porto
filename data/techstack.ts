@@ -17,4 +17,13 @@ export const BEStack = [
 	"Supabase",
 ];
 
-export const AllStack = [...new Set([...FEStack, ...BEStack])];
+export const IAStack = [
+	"PLC",
+	"SCADA",
+	"CI Server",
+	"STARDOM",
+	"OPC-UA",
+	"Modbus",
+];
+
+export const AllStack = [...new Set([...IAStack, ...FEStack, ...BEStack])];
