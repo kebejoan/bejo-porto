@@ -1,55 +1,66 @@
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function AboutMe() {
-	return (
-		<div className="w-full flex flex-col-reverse lg:flex-row gap-2 p-2">
-			<div className="w-full lg:w-3/4">
-				<div className="w-full flex flex-col items-center gap-4">
-					<div className="w-full flex flex-col gap-2 p-2 ">
-						<div className="text-3xl md:text-4xl lg:text-5xl font-pixel">
-							Hi, my name is Faishal! 👋
-						</div>
-						<div className="w-full "></div>
-						<div className="flex flex-col gap-4">
-							<div>
-								But people call me{" "}
-								<strong className="text-blue-500">Joe/Bejo</strong>. I'm a{" "}
-								<strong className="text-blue-500">
-									SCADA System Engineer turned Full-Stack Developer
-								</strong>
-								<br />
-							</div>
-							<p>
-								With 4+ years of experience delivering mission-critical
-								industrial solutions{" "}
-								<strong className="text-blue-500">
-									(STARDOM Controller, SCADA CI Server)
-								</strong>
-								, I apply engineering rigor to{" "}
-								<strong className="text-blue-500">
-									TypeScript, Next.js, and Nest.js.
-								</strong>{" "}
-								Recently graduated at the top of my Software Engineering
-								bootcamp, and built{" "}
-								<strong className="text-blue-500">Python ETL tools</strong> that
-								reduced operational workflows by{" "}
-								<strong className="text-blue-500">90%.</strong>
-							</p>
-							<div>
-								I build for stability, scalability, and execution excellence.
-							</div>
-						</div>
-						<div className="w-full flex justify-end">
-							<p className="w-fit font-pixel text-[1.4rem] lg:text-3xl text-right hover:cursor-pointer hover:text-bgblue">
-								...tell me more
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div className="w-full lg:w-1/4 flex flex-col justify-center items-center  p-2 lg:p-0">
-				<div className="w-48 lg:w-full max-w-sm pt-6 bg-bgblue rounded-full ">
-					<img src="/ava.png" alt="me" className="w-full h-auto" />
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className="w-full flex flex-col-reverse lg:flex-row gap-2 p-2">
+      <div className="w-full lg:w-3/4">
+        <div className="w-full flex flex-col items-center gap-4">
+          <div className="w-full flex flex-col gap-2 p-2 ">
+            <div className="text-3xl md:text-4xl lg:text-5xl font-pixel">
+              Hi, my name is Faishal! 👋
+            </div>
+            <div className="w-full "></div>
+            <div className="flex flex-col gap-4">
+              <div>
+                But people call me{" "}
+                <strong className="text-blue-500">Joe/Bejo</strong>. I'm a{" "}
+                <strong className="text-blue-500">
+                  SCADA System Engineer turned Full-Stack Developer
+                </strong>
+                <br />
+              </div>
+              <p>
+                With 4+ years of experience delivering mission-critical
+                industrial solutions{" "}
+                <strong className="text-blue-500">
+                  (STARDOM Controller, SCADA CI Server)
+                </strong>
+                , I apply engineering rigor to{" "}
+                <strong className="text-blue-500">
+                  TypeScript, Next.js, and Nest.js.
+                </strong>{" "}
+                Recently graduated at the top of my Software Engineering
+                bootcamp, and built{" "}
+                <strong className="text-blue-500">Python ETL tools</strong> that
+                reduced operational workflows by{" "}
+                <strong className="text-blue-500">90%.</strong>
+              </p>
+              <div>
+                I build for stability, scalability, and execution excellence.
+              </div>
+            </div>
+            <div className="w-full flex justify-end">
+              <a
+                href="https://docs.google.com/document/d/1We4WcVFcdeyw4pdwz7X7eRV_l82abK9BuYNwxpZJq34/"
+                target="_blank"
+                className="w-fit bg-bgblue grow rounded-md hover:bg-bgblueflip hover:text-bgblue cursor-pointer text-center py-1 lg:py-2 font-bold"
+              >
+                my résumé{"  "}
+                <FontAwesomeIcon
+                  className="text-base"
+                  icon={faArrowUpRightFromSquare}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full lg:w-1/4 flex flex-col justify-center items-center  p-2 lg:p-0">
+        <div className="w-48 lg:w-full max-w-sm pt-6 bg-bgblue rounded-full ">
+          <img src="/ava.png" alt="me" className="w-full h-auto" />
+        </div>
+      </div>
+    </div>
+  );
 }
