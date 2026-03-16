@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Badge from "./badges";
 import { FEStack, BEStack } from "@/data/techstack";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 export default function AdditionalInfo() {
 	return (
@@ -46,24 +48,28 @@ export default function AdditionalInfo() {
 									<a
 										href="https://drive.google.com/file/d/1dUWXe12BGEdFPMB6gSfytTmZn29oMZvu/view?usp=drive_link"
 										target="_blank"
-										className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer underline"
+										className="flex gap-1 text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer underline"
 									>
-										• Certificate • Software Eng. RevoU • 2025 (⬆)
+										• Certificate • Software Eng. RevoU • 2025
+										<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
 									</a>
+
 									<a
 										href="https://ijaseit.insightsociety.org/index.php/ijaseit/article/view/12989/pdf_1653"
 										target="_blank"
 										className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer underline "
 									>
 										• Publication • Analysis of Indoor Air Quality Based on
-										Low-Cost Sensor • 2020(⬆)
+										Low-Cost Sensor • 2020
+										<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
 									</a>
 									<a
 										href="https://drive.google.com/file/d/1c1e5m_6C6EXFQIdUktnEuvnTa-atIrk7/view?usp=sharing"
 										target="_blank"
 										className="text-sm lg:text-base font-bold cursor-default hover:text-blue-500 cursor-pointer underline"
 									>
-										• Patent • DJKI • S00202006865 • 2021(⬆)
+										• Patent • DJKI • S00202006865 • 2021
+										<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
 									</a>
 								</div>
 							</div>
