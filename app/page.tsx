@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import GroundHero from "@/components/0_GroundHero";
 import SkyContent from "@/components/SkyContent";
 import HeaderPorto from "@/components/HeaderPorto";
@@ -8,16 +8,18 @@ import HeaderPorto from "@/components/HeaderPorto";
 export default function Home() {
   const [isReady, setIsReady] = useState(false);
 
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    // 1. Prevent browser from remembering old scroll position
     if ("scrollRestoration" in history) {
       history.scrollRestoration = "manual";
     }
 
-    // 2. Perform the jump immediately
-    window.scrollTo(0, document.documentElement.scrollHeight);
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      container.scrollTop = container.scrollHeight;
+    }
 
-    // 3. Small timeout to ensure the jump happened, then fade in
     const timer = setTimeout(() => {
       setIsReady(true);
     }, 100);
@@ -26,20 +28,24 @@ export default function Home() {
   }, []);
 
   return (
-    <main
+    <div
       className={`
-        flex flex-col items-center min-h-screen transition-opacity duration-1000 cursor-default
-				
+        flex flex-col items-center min-h-screen transition-opacity duration-1200 cursor-default
         ${isReady ? "opacity-100" : "opacity-0"}
       `}
     >
-      <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth no-scrollbar">
-        <SkyContent />
+      <main
+        ref={scrollContainerRef}
+        className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth no-scrollbar"
+      >
+        <div className={isReady ? "block" : "hidden"}>
+          <SkyContent />
+        </div>
         <section className="h-screen w-screen snap-start shrink-0 overflow-hidden">
           <GroundHero />
         </section>
       </main>
       <HeaderPorto />
-    </main>
+    </div>
   );
 }
