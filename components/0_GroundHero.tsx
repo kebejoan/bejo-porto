@@ -1,4 +1,3 @@
-import AboutMe from "./1_AboutMe";
 import { AllStack } from "@/data/techstack";
 import Badge from "./badges";
 
@@ -40,7 +39,7 @@ export default function GroundHero() {
           <div>
             SCADA System Engineer • Industrial Automation • Full-Stack Developer
           </div>
-          <div className="left-20 w-full lg:w-[768] flex items-center justify-center translate-x--10 overflow-hidden px-2">
+          <div className="left-20 w-full md:w-[768] flex items-center justify-center translate-x--10 overflow-hidden px-2">
             <div className="-ml-1">
               <div className="w-full flex gap-2 overflow-hidden">
                 {AllStack.map((stack, index) => (

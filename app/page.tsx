@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import GroundHero from "@/components/GroundHero";
+import GroundHero from "@/components/0_GroundHero";
 import SkyContent from "@/components/SkyContent";
 import HeaderPorto from "@/components/HeaderPorto";
 
@@ -33,17 +33,13 @@ export default function Home() {
         ${isReady ? "opacity-100" : "opacity-0"}
       `}
     >
-      <div className="flex-grow z-9999 w-screen">
+      <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth no-scrollbar">
         <SkyContent />
-      </div>
-      <GroundHero />
+        <section className="h-screen w-screen snap-start shrink-0 overflow-hidden">
+          <GroundHero />
+        </section>
+      </main>
       <HeaderPorto />
-      {/* <div className="relative flex-grow z-0 w-screen">
-				<GroundHero />
-				<div className="absolute bottom-0 w-screen">
-					<Header />
-				</div>
-			</div> */}
     </main>
   );
 }
