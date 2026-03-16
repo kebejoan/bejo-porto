@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Badge from "./badges";
-import { FEStack, BEStack } from "@/data/techstack";
+import { FEStack, BEStack, IAStack } from "@/data/techstack";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 export default function AdditionalInfo() {
@@ -18,6 +18,16 @@ export default function AdditionalInfo() {
 								• My Tech Stack
 							</div>
 							<div className="flex flex-col lg:flex-row gap-2 ">
+								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-5">
+									<p className="mb-2 font-bold text-bgblueflip">
+										Industrial Automation
+									</p>
+									<div className="w-full flex flex-wrap gap-2">
+										{IAStack.map((stack) => (
+											<Badge text={stack} key={stack} />
+										))}
+									</div>
+								</div>
 								<div className="w-full flex flex-col bg-bgblue rounded-md p-2 pb-5">
 									<p className="mb-2 font-bold text-bgblueflip">Front-End</p>
 									<div className="w-full flex flex-wrap gap-2">
