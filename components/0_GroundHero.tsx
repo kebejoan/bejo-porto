@@ -1,8 +1,15 @@
 import { AllStack } from "@/data/techstack";
-import Badge from "./badges";
 import MotionWrapper from "./MotionWrapper";
+import TechTicker from "./TechTicker";
+import { useRef } from "react";
 
-export default function GroundHero() {
+interface GroundHeroProps {
+	onNavigate: (id: string) => void;
+}
+
+export default function GroundHero({ onNavigate }: GroundHeroProps) {
+	const scrollContainerRef = useRef<HTMLDivElement>(null);
+
 	return (
 		<div className="relative w-full h-screen">
 			<div className="flex flex-col justify-end items-center w-full h-full">
@@ -44,14 +51,10 @@ export default function GroundHero() {
 					<div>
 						SCADA System Engineer • Industrial Automation • Full-Stack Developer
 					</div>
-					<div className="left-20 w-full md:w-[768] flex items-center overflow-x-auto no-scrollbar scroll-smooth px-2">
+					<div className="left-20 w-full md:w-[768] flex items-center px-2">
 						<div className="w-full overflow-x-auto no-scrollbar scroll-smooth">
-							<div className="w-full flex flex-nowrap gap-2 pb-2">
-								{AllStack.map((stack, index) => (
-									<MotionWrapper type="fade-in" key={index}>
-										<Badge text={stack} key={index} />
-									</MotionWrapper>
-								))}
+							<div className="w-full flex flex-nowrap gap-2 pb-2 ">
+								<TechTicker items={AllStack} />
 							</div>
 						</div>
 					</div>
@@ -61,12 +64,18 @@ export default function GroundHero() {
 				<div className="w-full lg:w-[1024] flex flex-col justify-center items-center text-3xl md:text-4xl lg:text-5xl font-pixel">
 					<MotionWrapper type="spring-in" delay={1.4}>
 						<MotionWrapper type="click">
-							<p className="flex xl:hidden bg-background px-2 rounded-2xl">
+							<button
+								onClick={() => onNavigate("about")}
+								className="flex xl:hidden bg-background px-2 rounded-2xl"
+							>
 								Swipe down, take a tour!
-							</p>
-							<p className="hidden xl:flex bg-background px-2 rounded-2xl">
+							</button>
+							<a
+								href="#about"
+								className="hidden xl:flex bg-background px-2 rounded-2xl"
+							>
 								Scroll up, take a tour!
-							</p>
+							</a>
 						</MotionWrapper>
 					</MotionWrapper>
 				</div>

@@ -79,3 +79,24 @@ body {
 		word-wrap: break-word;
 	}
 }
+
+.mask-fade-edges {
+	-webkit-mask-image: linear-gradient(
+		to right,
+		transparent,
+		black 2%,
+		black 98%,
+		transparent
+	);
+	mask-image: linear-gradient(
+		to right,
+		transparent,
+		black 2%,
+		black 98%,
+		transparent
+	);
+
+	/* Critical: ensure the mask doesn't repeat if the container is larger */
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
